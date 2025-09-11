@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Phiếu đăng ký tham gia chương trình khuyến mãi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    form {
+      width: 500px;
+      background-color: #e6ffe6;
+      padding: 20px;
+      border: 1px solid #999;
+      margin: 20px auto;
+    }
+    h2 {
+      text-align: center;
+      color: green;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+      margin-top: 8px;
+    }
+    input[type="text"], select {
+      width: 250px;
+      padding: 4px;
+    }
+    input[type="radio"] {
+      margin-left: 10px;
+    }
+    .button {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .success {
+      text-align: center;
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+
+    <label>Họ và tên</label>
+    <input type="text" name="hoten" value="Nguyễn Ngọc Quỳnh Nga"><br>
+
+    <label>Địa chỉ</label>
+    <input type="text" name="diachi" value="2Bia Hùng Vương, Q10"><br>
+
+    <label>Điện thoại</label>
+    <input type="text" name="dienthoai" value="0909097506"><br>
+
+    <label>Phái</label>
+    <input type="radio" name="phai" value="Nam"> Nam
+    <input type="radio" name="phai" value="Nữ" checked> Nữ<br>
+
+    <label>Nghề nghiệp</label>
+    <select name="nghenghiep">
+      <option>Bác sĩ</option>
+      <option>Kỹ sư</option>
+      <option selected>Giáo viên</option>
+      <option>Khác</option>
+    </select><br>
+
+    <label>Chọn sản phẩm tham gia</label>
+    <select name="sanpham" multiple size="4">
+      <option>Kem đánh răng</option>
+      <option selected>Bột giặt</option>
+      <option>Dầu gội đầu</option>
+      <option>Sữa tắm</option>
+    </select><br>
+
+    <label>Số người dự đoán tham gia</label>
+    <input type="text" name="songuoi" value="250000"><br>
+
+    <div class="button">
+      <input type="submit" value="Đồng ý">
+    </div>
+
+    <div class="success">
+      Bạn đã đăng ký thành công!!!
+    </div>
+  </form>
+</body>
+</html>
